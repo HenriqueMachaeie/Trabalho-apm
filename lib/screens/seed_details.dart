@@ -48,7 +48,7 @@ class SeedDetailsScreen extends ConsumerWidget{
                       ).animate(animation),
                       child: child);
                 },
-                child:Icon(isFavorite ? Icons.star : Icons.star_border,key: ValueKey(isFavorite),
+                child:Icon(isFavorite ? Icons.star : Icons.add_shopping_cart_outlined ,key: ValueKey(isFavorite),
                 ),
               ),
             )

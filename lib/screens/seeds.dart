@@ -38,7 +38,7 @@ class SeedScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('upps! ainda nao ha semente para essa seccao',
+            Text('upps! ainda nao ha item para essa seccao',
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                 color: Theme.of(context).colorScheme.onBackground,
               ),),
@@ -55,13 +55,39 @@ class SeedScreen extends StatelessWidget {
     }
 
     if (sementes.isNotEmpty) {
-      content = ListView.builder(
+      content =    
+      ListView.builder(
         itemCount: sementes.length,
         itemBuilder: (ctx, index) => MealItem(meal: sementes[index],
           onSelectMeal: (context,meal){
             selectMeal(context,meal);
           },),
       );
+       return Scaffold(
+      appBar: AppBar(title: Text(title ?? '')),
+      body: content,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text("Compra realizada com sucesso"),
+                actions: <Widget>[
+                  TextButton(
+                    child: Text("OK"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        },
+        child: Icon(Icons.shopping_cart),
+      ),
+    );
     }
 
     if(title == null){

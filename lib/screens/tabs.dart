@@ -77,6 +77,15 @@ class _TabsScreenState extends ConsumerState<TabsScreen>{
         );
       activePageTitle = 'Your Favorites';
     }
+
+
+    if(_selectedPageIndex == 2){
+      final favoriteMeals = ref.watch(favoriteMealsProvider);
+      activePage =  SeedScreen(sementes: favoriteMeals,
+        );
+      activePageTitle = 'Carrinho de Compras';
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text(activePageTitle),

@@ -15,8 +15,9 @@ class MealItem extends StatelessWidget{
   }
 
   String get affordabilityText{
-    return meal.affordability.name[0].toUpperCase() + meal.affordability.name.substring(1);
+    return meal.affordability.name[0].toUpperCase() + meal.affordability.name.substring(1);  
   }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -69,6 +70,10 @@ class MealItem extends StatelessWidget{
                           icon: Icons.schedule,
                           label: '${meal.duration} dias'),
                       const SizedBox(width: 12),
+                      SeedItemTrait(
+                          icon: Icons.price_check,
+                          label: '${meal.preco} mt'),
+                          const SizedBox(width: 12),
                       SeedItemTrait(
                         icon: Icons.work,
                         label: complexityText,

@@ -19,6 +19,7 @@ class Seed {
     required this.properties,
     required this.benefits,
     required this.duration,
+    required this.preco,
     required this.complexity,
     required this.affordability,
     required this.isOrganica,
@@ -34,6 +35,7 @@ class Seed {
   final List<String> properties;
   final List<String> benefits;
   final int duration;
+  final double preco;
   final Complexity complexity;
   final Affordability affordability;
   final bool isOrganica; //sementes cultivadas sem produtos químicos ou processos sintéticos.

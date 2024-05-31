@@ -93,6 +93,7 @@ const dummyMeals = [
       'Faz bem para a pele: As vitaminas do complexo B e o zinco são importantes para a saúde da pele, cabelos e unhas.',
       'Previne doenças crônicas: O consumo regular de grãos integrais, como o trigo, pode reduzir o risco de doenças crônicas como diabetes tipo 2, doenças cardíacas e alguns tipos de câncer.'
     ],
+    preco: 100,
     isOrganica: false,
     isCultivoSustentavel: true,
     isPlantioDomestico: true,
@@ -121,6 +122,7 @@ const dummyMeals = [
       'O ácido clorogênico e outros compostos presentes nas sementes de café podem proteger o fígado contra danos causados por toxinas e doenças como cirrose hepática. \n',
       'Redução do risco de doenças crônicas: A inflamação crônica é um fator de risco para doenças como doenças cardíacas, diabetes, câncer e doenças neurodegenerativas.'
     ],
+   preco: 110,
     isOrganica: false,
     isCultivoSustentavel: false,
     isPlantioDomestico: false,
@@ -151,6 +153,7 @@ const dummyMeals = [
       'Diminui a ansiedade e a insônia: O magnésio presente na semente de abacate possui propriedades relaxantes que podem ajudar a reduzir a ansiedade e melhorar a qualidade do sono.',
 
     ],
+    preco: 200,
     isOrganica: false,
     isCultivoSustentavel: false,
     isPlantioDomestico: false,
@@ -183,6 +186,7 @@ const dummyMeals = [
       '4.Previne a formação de coágulos sanguíneos.',
 
     ],
+    preco: 120,
     isOrganica: false,
     isCultivoSustentavel: false,
     isPlantioDomestico: false,
@@ -215,6 +219,7 @@ const dummyMeals = [
       'Alívio dos sintomas da menopausa: As isoflavonas podem ajudar a aliviar os sintomas da menopausa, como ondas de calor, suores noturnos e secura vaginal.',
 
     ],
+    preco: 180,
     isOrganica: true,
     isCultivoSustentavel: false,
     isPlantioDomestico: true,
@@ -250,6 +255,7 @@ const dummyMeals = [
       '7.Previne doenças crônicas: O consumo regular de grãos integrais, como a semente de jaca, pode reduzir o risco de doenças crônicas como diabetes tipo 2, doenças cardíacas e alguns tipos de câncer.',
 
     ],
+    preco: 280,
     isOrganica: true,
     isCultivoSustentavel: false,
     isPlantioDomestico: true,
@@ -279,6 +285,7 @@ const dummyMeals = [
       'A linhaça é uma boa fonte de proteínas vegetais, importantes para o crescimento, reparo e manutenção dos tecidos corporais. \n',
       'Fósforo: Importante para a saúde óssea e dental.'
     ],
+    preco: 300,
     isOrganica: true,
     isCultivoSustentavel: false,
     isPlantioDomestico: true,
@@ -311,6 +318,7 @@ const dummyMeals = [
       '4. Melhoria da Memória e Função Cognitiva: \n Pesquisas indicam que os antioxidantes da romã podem ter efeitos positivos na função cognitiva, melhorando a memória e reduzindo o risco de doenças neurodegenerativas. \n',
 
     ],
+    preco: 120,
     isOrganica: true,
     isCultivoSustentavel: false,
     isPlantioDomestico: false,
@@ -346,6 +354,7 @@ const dummyMeals = [
       '8.Diminui a ansiedade e a insônia: O magnésio presente na semente de girassol possui propriedades relaxantes que podem ajudar a reduzir a ansiedade e melhorar a qualidade do sono.',
 
     ],
+    preco: 220,
     isOrganica: true,
     isCultivoSustentavel: false,
     isPlantioDomestico: true,
@@ -379,6 +388,7 @@ const dummyMeals = [
       '5. Fortalece o sistema imunológico: \n Contribui para o bom funcionamento do sistema imunológico. \n',
 
     ],
+    preco: 120,
     isOrganica: true,
     isCultivoSustentavel: true,
     isPlantioDomestico: true,
@@ -396,15 +406,12 @@ const dummyMeals = [
         'https://cdn.pixabay.com/photo/2019/05/28/23/40/foxtail-barley-4236373_1280.jpg',
     duration: 0,
     properties: [
-      '1. Rica em Fibras:\n Auxiliam na digestão, regulando o intestino e promovendo a saciedade.\n  Controlam os níveis de colesterol e contribuem para a saúde da microbiota intestinal. \n',
-      '2.Beta-glucana:      \n Um tipo de fibra solúvel que ajuda a reduzir o colesterol LDL ("mau") e controlar os níveis de açúcar no sangue. \n',
-      '3. Fonte de Proteínas: \n Essenciais para o crescimento, reparo e manutenção dos tecidos corporais. \n',
-      '4.Vitaminas: \n Rica em vitaminas do complexo B ',
 
     ],
     benefits: [
       ''
     ],
+    preco: 90,
     isOrganica: false,
     isCultivoSustentavel: false,
     isPlantioDomestico: false,
